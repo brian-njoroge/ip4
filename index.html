@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ruby pizzaria.</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+          <h1>Ruby Pizzaria.</h1>
+          <div class="navbar">
+         <a href="Contact-Us.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="card orderInput">
+            <div class="row justify-content-around">
+                <form id="pizzacooking">
+                  <h1>Pizza preperation.</h1>
+                  <div class="form-group row align-items-center">
+                    <label class="col-sm-3 col-form-label" for="pizzaSize" >Preferred pizza size:</label>
+                    <select id="pizzaSize" class="form-control col-sm-9">
+                        <option value="500">Small Size @ Kshs 400</option>
+                        <option value="800">Medium size @ Kshs 600</option>
+                        <option value="1000">Large size @ Kshs 900</option>
+                        <option value="1200">King Size @ Kshs 1200</option>
+                      </select>
+                      </div>
+
+                      <div class="form-group row align-items-center">
+                        <label class="col-sm-3 col-form-label" for="pizzaCrust">Preferred pizza Crust</label>
+                        <select id="pizzaCrust" class="form-control col-sm-9">
+                            <option value="100">Thin crust @ Kshs 200</option>
+                            <option value="200">Thick crust @ Kshs 300</option>
+                            <option value="300">Heavy crust @ Kshs 400</option>
+                            <option value="400">Full crust @ Kshs 500</option>
+                        </select>
+                    </div>
+
+                    <fieldset id="pizzaToppings" class="form-group" form="pizzaCraft">
+                        <legend class="col-form-label col-sm-3 text-center">preffered Toppings</legend>
+                        <div class="row Toppings align-items-center">
+
+                            <div class="col-sm-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" id="oysters" type="checkbox" value="200" />
+                                    <label class="form-check-label" for="oysters">Smoked Oysters @Kes.200</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="sardines" type="checkbox" value="100" />
+                                    <label class="form-check-label" for="sardines">Sardines @Kes.100</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="tuna" type="checkbox" value="80" />
+                                    <label class="form-check-label" for="tuna">Tuna @Kes.80</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="mushrooms" type="checkbox" value="70" />
+                                    <label class="form-check-label" for="mushrooms">Mushrooms @Kes.70</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="tomatoes" type="checkbox" value="30" />
+                                    <label class="form-check-label" for="tomatoes">Sun-dried Tomatoes @Kes.30</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="bacon" type="checkbox" value="80" />
+                                    <label class="form-check-label" for="bacon">Bacon slices @Kes.80</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="beef" type="checkbox" value="50" />
+                                    <label class="form-check-label" for="beef">Ground beef @Kes.50</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" id="sausage" type="checkbox" value="50" />
+                                    <label class="form-check-label" for="sausage">Sausage rings @Kes.50</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="ham" type="checkbox" value="80" />
+                                    <label class="form-check-label" for="ham">Ham slices @Kes.80</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="pepperoni" type="checkbox" value="70" />
+                                    <label class="form-check-label" for="pepperoni">Pepperoni rings @Kes.70</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="chicken" type="checkbox" value="50" />
+                                    <label class="form-check-label" for="chicken">Chicken chunks @Kes.50</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="egg-plant" type="checkbox" value="50" />
+                                    <label class="form-check-label" for="egg-plant">Grilled Egg-plant @Kes.50</label>
+                                </div>
+                            </div>
+                        </div>
+                      </fieldset> 
+                      <div id="pizzaCount" class="form-group row align-items-center">
+                        <label class="col-sm-3 col-form-label" for="pizzaCount">Number of Pizzas</label>
+                        <input class="form-control col-sm-9" type="number" min="1">
+                        <div class="form-group mr-n3">
+                          <button class="btn btn-outline-success form-control" type="submit">Place Order here.</button>
+                        </div>
+                      </form>
+
+                      <div id="pizzaStack" class="col-md-6">
+                        <h1>Pizza stack</h1>
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th>Size</th>
+                              <th>Crust</th>
+                              <th>Toppings</th>
+                              <th>Price</th>
+                            </tr>
+                          </thead>
+                          <tablebody></tablebody>
+                        </table>
+                        <hr />
+                        <p>The total charge is <span id="total-charge">0</span>/=</p>
+
+                        <form id="delivery">
+                            <p>Would you like a delivery at an extra Kshs 500 ?</p>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" name="delivery" type="radio" id="pick-up" value="pick" />
+                              <label class="form-check-label" for="pick-up">
+                                Pick-Up
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" name="delivery" type="radio" id="deliver" value="deliver" />
+                              <label class="form-check-label" for="deliver">
+                                Delivery
+                              </label>
+                            </div>
+                            <input class="form-control" id="deliveryLocation" type="text" placeholder="Delivery Location..." />
+                          </form>
+                          <button id="checkoutBtn" class="btn btn-outline-success form-control">Checkout</button>
+                        </div>
+                      </div>
+                    </div>
+                    <script
+                        src="https://code.jquery.com/jquery-3.6.0.js"
+                        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                  crossorigin="anonymous"></script>
+                  <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.6.0.js"></script>
+                  <script src="js/script.js"></script>
+
+</body>
+</html>
+                  
+
+
+

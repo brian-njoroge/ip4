@@ -1,0 +1,84 @@
+body {
+    background-image: url(../images/pizza);
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+   }
+   .jumbotron {
+    height:10px;
+  }
+  h1 {
+    text-emphasis: bold;
+    text-align: center;
+  
+  }
+  .navbar {
+    display:flex;
+  }
+  .card {
+    display: flex;
+    justify-content: space-between;
+    opacity:0.9;
+    margin-right:20%;
+    float: left;
+    /* padding-left: 20px;
+    padding-right: 25px; */
+  }
+  .our-story {
+    width: 50%;
+    opacity:0.9;
+    margin: 15% 25%;
+  }
+  /* .form-group {
+    width: 40%;
+  } */
+  .orderInput {
+    opacity:0.9;
+    margin-right:10%;
+    float: left;
+  }
+  .MakeYourOrder {
+    margin-right: 20%;
+    margin-left:2%;
+    margin-bottom: 2%;
+  }
+  #PizzaSelection {
+    margin-right: 10%;
+    margin-left:2%;
+    margin-bottom: 2%;
+  }
+  #PizzaSize {
+    margin-right: 10%;
+    margin-left:2%;
+    margin-bottom: 2%;
+  }
+  #pizzaCrust {
+    margin-right: 10%;
+    margin-left:2%;
+    margin-bottom: 2%;
+  }
+  .pizzaToppings {
+    margin-right: 10%;
+    margin-left:2%;
+    margin-bottom: 2%;
+  }
+  .pizzaCount {
+    margin-right: 10%;
+    margin-left:2%;
+    margin-bottom: 2%;
+  }
+  .orderSummary {
+    display:none;
+    margin-right: 20%;
+    margin-left:2%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    opacity:0.9;
+    width:30%;
+    height:flex;
+    float: right;
+  }
+  .customerContactDetails {
+    display:none;
+  }
+
+   
